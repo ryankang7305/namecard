@@ -32,29 +32,34 @@
             <a href="https://open.kakao.com/o/sI5852Cg" target="_blank">카카오톡</a>
             <a href="#" target="blank" class="pc">네이버블로그</a>
         </div>
-        <div class="map_box">
+        <div class="map_box_km">
             <h2>오시는길</h2>
-            <div class="map">
-                <!-- * 카카오맵 - 지도퍼가기 -->
-                <!-- 1. 지도 노드 -->
-            <div id="daumRoughmapContainer1721022989696" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;">
-
-            </div>
+            <div class="map_km">
 
             <!--
-                2. 설치 스크립트
-                * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+               * 카카오맵 - 약도서비스
+               * 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+               * 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
             -->
+            <!-- 1. 약도 노드 -->
+            <div id="daumRoughmapContainer1721029553092" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
+
+            <!-- 2. 설치 스크립트 -->
             <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
             <!-- 3. 실행 스크립트 -->
             <script charset="UTF-8">
-                new daum.roughmap.Lander({
-                    "timestamp" : "1721022989696",
-                    "key" : "2k2hv",
-                    "mapWidth" : "",
-                    "mapHeight" : "360"
-	        }).render();
+               new daum.roughmap.Lander({
+                  "timestamp" : "1721029553092",
+                  "key" : "2k2ms",
+                  "mapWidth" : "",
+                  "mapHeight" : "360"
+               }).render();
+</script>
+</script>
+            
+
+            
             
 </script>
             </div>
