@@ -5,7 +5,7 @@
 
 /* @media screen and (max-width:499px){ */
     
-
+.pc {display: none;}
 #wrap {background: url(../images/KakaoTalk_20240715_150436872.png); background-size: cover; padding-top: 40px;}
 
 header{margin-bottom: 40px; /* border: 1px solid #000; */ padding: 0 40px;}
@@ -18,14 +18,13 @@ header strong {font-size: 18px; text-align: center; display: block; margin-top: 
 color:#fff}
 header em {font-size: 14px; text-align: center;display: block; margin-top: 4px; color: #888; font-style: normal; word-break: keep-all;}
 
-.btn_box {margin-bottom: 40px; /* border: 1px solid red; */display:flex; flex-direction:column; align-items: center; gap:16px; }
+.btn_box { /* border: 1px solid red; */display:flex; flex-direction:column; align-items: center; gap:16px; /* border: 1px solid #fff;  */justify-content: center; margin:0 35px 40px 35px;}
 .btn_box a {background: #000; color: #fff; font-size: 16px; padding: 10px 13.33vw; border-radius: 4px; min-width: 100px; text-align: center; }
 .btn_box a:nth-child(1) {background: #579f50;}
 .btn_box a:nth-child(2) {background: #198686;}
 .btn_box a:nth-child(3) {background: #AD7116;}
 .btn_box a:nth-child(4) {background: #8A236D;}
-
-
+.btn_box a:nth-child(5) {background: #10950D;}
 
 
 .map_box {/* border: 1px solid blue; */ padding:0 35px; padding-bottom : 100px; text-align: center;}
@@ -35,6 +34,17 @@ header em {font-size: 14px; text-align: center;display: block; margin-top: 4px; 
 
 
 
-@media screen and (min-width:500px){
+@media screen and (min-width:800px){
+
+    .pc {display: block;}
     header h1 {width: 110px; height: 110px;}
+    .btn_box {flex-direction: row; flex-wrap: wrap;}
+    .btn_box a {flex-grow: 1; width: 100px;}
+
 }
+
+
+
+
+
+
